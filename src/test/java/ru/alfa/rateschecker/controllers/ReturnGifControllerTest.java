@@ -16,7 +16,6 @@ import ru.alfa.rateschecker.RatesCheckerApplication;
 import ru.alfa.rateschecker.model.checkrateresponse.CheckRatesResponse;
 import ru.alfa.rateschecker.service.CheckRateService;
 
-import static org.aspectj.weaver.tools.cache.SimpleCacheFactory.path;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -39,7 +38,7 @@ class ReturnGifControllerTest {
 
         final String result = mockMvc.perform(
                         get(
-                                "/gif").queryParam("symbols", "USD")
+                                "/gif").queryParam("symbols", "EUR")
                                 .contentType(MediaType.APPLICATION_JSON)
 
                 )
