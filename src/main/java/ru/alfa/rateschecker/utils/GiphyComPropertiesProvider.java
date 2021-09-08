@@ -28,9 +28,9 @@ public class GiphyComPropertiesProvider {
     private String falseTag;
 
 
-    public GiphyComPropertiesProvider(@Value("${api.params.giphycom.api_key}") String apiKey,
-                                      @Value("${api.params.giphycom.truetag}") String trueTag,
-                                      @Value("${api.params.giphycom.falsetag}") String falseTag) {
+    public GiphyComPropertiesProvider(@Value("${giphycom.api_key}") String apiKey,
+                                      @Value("${giphycom.truetag}") String trueTag,
+                                      @Value("${giphycom.falsetag}") String falseTag) {
         this.apiKey = apiKey;
         this.trueTag = trueTag;
         this.falseTag = falseTag;

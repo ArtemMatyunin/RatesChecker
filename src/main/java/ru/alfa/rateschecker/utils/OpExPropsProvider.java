@@ -35,9 +35,9 @@ public class OpExPropsProvider {
      */
     private int daysAgo;
 
-    public OpExPropsProvider(@Value("${api.params.openexchangerates.app_id}") String appId,
-                             @Value("${api.params.openexchangerates.base}") String base,
-                             @Value("${api.params.openexchangerates.daysago}") int daysAgo) {
+    public OpExPropsProvider(@Value("${openexchangerates.app_id}") String appId,
+                             @Value("${openexchangerates.base}") String base,
+                             @Value("${openexchangerates.daysago}") int daysAgo) {
         this.appId = appId;
         this.base = base;
         this.daysAgo = daysAgo;
